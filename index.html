@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR_BISHOP</title>
+    <link rel="stylesheet" href="index.css">
+<!--script src="index.js"></script-->
+</head>
+<body>
+    <center>
+    <div class="box">
+    <div class="mr">MR BISHOP'S LOGIN</div>
+    <div class="input">
+        
+    <input type="text" placeholder="username" class="us" id="name">
+    <input type="text" placeholder="password" class="pa" id="pass">
+        
+</div>
+    <button class="su" id="enter">LOGIN</button>
+
+    </div>
+    <p id="hik"></p>
+</center>
+
+<script type="text/javaScript">
+ 
+    document.getElementById("enter").onclick =function() {
+  
+    var username = document.getElementById("name").value;
+    var name = "mrbishop";
+    var password =document.getElementById("pass").value;
+    var pass = "12345";
+  
+  
+    if (name==username & pass==password){
+    
+  
+   document.getElementById("hik").innerHTML="";
+   window.location.href = "login.html";}
+  
+    else{
+   document.getElementById("hik").innerHTML="Try again";}  
+      
+    }
+  
+  
+  </script>
+  
+</body>
+</html>
